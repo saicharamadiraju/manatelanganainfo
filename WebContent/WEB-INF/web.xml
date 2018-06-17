@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+<!--     <welcome-file>TelanganaStateMap.html</welcome-file>
+ -->  </welcome-file-list>
+  
+  <servlet>
+  		<servlet-name>KnowYourDistrict</servlet-name>
+		<servlet-class>com.yourdistrict.RequestProcessor</servlet-class>
+		<init-param>
+			<param-name>ImplementationClass</param-name>
+			<!--  COMPONENTS: This was previously com.pega.pegarules.services.HttpAPI -->
+			<param-value>com.yourdistrict.DistrictInfoBean</param-value>
+		</init-param>
+  </servlet>
+  
+  <servlet>
+  		<servlet-name>JSPTest</servlet-name>
+		<servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
+        <init-param>
+            <param-name>logVerbosityLevel</param-name>
+            <param-value>WARNING</param-value>
+        </init-param>
+        <load-on-startup>3</load-on-startup>
+  </servlet>
+
+
+	<!-- <servlet-mapping>
+		<servlet-name>Telanana</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping> -->
+	 
+	
+	
+
+	<servlet-mapping>
+		<servlet-name>KnowYourDistrict</servlet-name>
+		<url-pattern>/StateInfo</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>KnowYourDistrict</servlet-name>
+		<url-pattern>/StateInfo*</url-pattern>
+		
+	</servlet-mapping> 
+</web-app>

@@ -1,0 +1,300 @@
+#container {	
+	width : 1000px;
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+    border: 2px solid #ff0080;
+}
+
+#horizontalMenu a {
+    text-decoration: none !important;
+	float : left;
+	color: white;
+	font-family: Arial;
+	text-align: left;
+}
+
+body {
+	background: #C0C0C0;
+}
+
+#heading {
+	color: #1E09AC;
+	text-align: center;
+	float: left;
+	font-size : 22px;
+}
+
+#kcr {
+	float:left;
+	width:150px;
+	height: 130px;
+}
+
+#WhatsNew {
+	margin-top:5px;
+	margin-bottom: 5px;
+	padding:2px;
+	float: none;
+}
+
+#WhatsNewLabel{
+	padding:2px;
+	color: #f7ef85;
+	background-color: #154faf;
+	float: left;
+}
+
+#WhatsNewMarquee {
+	float: left;
+	scrollamount : 3;
+}
+
+#logo{
+	float:right;
+	padding-top:10px;
+	padding-right:10px;
+}
+
+#horizontalMenu {
+	float:top;
+	background-color: #6B8E23;
+	font-family: Arial;
+	font-size: 16px;
+	margin-top: 5px;
+	color: black;
+	border: solid 1px black;
+	overflow: hidden;
+}
+
+#image1 {
+	width : 400px;
+	height: 400px;
+	padding: 0px;
+	float: right;
+	margin-right: 10px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  
+}
+
+.mySlides, .mySlides1, .mySlides2 {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.paragraph {
+	color: black;
+	font-size : 17px;
+	padding : 5px;
+	padding-top : 0px;
+	text-align: justify;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    #min-width: 160px;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+#horizontalMenu a:hover, .dropdown:hover .dropbtn {
+    background-color: #045A0A;
+}
+
+.dropdown .dropbtn {
+    font-size: 18px;    
+    border: none;
+    outline: none;
+	padding: 14px 15px;
+	color:white;
+    background-color: inherit;
+	text-align : center;
+	font-family: Armenian;
+}
+
+#dropDownContent a:hover {
+    background-color: red;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#horizontalMenu a {
+	padding: 14px 16px;
+	font-size: 18px;
+	text-align : center;
+	font-family: Armenian;	
+}
+
+#dropDownContent  a{
+	font-size: 15px;
+	float: none;
+	display: block;
+	text-align: left;
+	color:white;
+	background-color:black;
+	padding: 10px 12.5px;
+}
+
+#centerContent {
+	padding-top : 0px;
+	width : 1000px;
+}
+
+#topHeader {
+	float: none;
+}
+.footerElements { 
+  	width: 80px;
+    height:80px;
+    display: block;
+}
+
+.shareElements {
+	width : 40px;
+	height: 40px;
+	display: block;
+}
+
+.columnSize {
+	border-radius: 20px;
+}
+
+#footerTable {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+	bottom:0px;
+}
+
+#shareTable {
+	 width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+	bottom:0px;
+}
+
+#slideShowTable {
+	width : 33%;
+}
+
+.scrollingImage {
+	width:300px;
+	height: 220px;
+	padding-left:60px;
+	padding-right:10px;
+	border-radius: 4px;
+}
+
+#feedControl {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 440px;
+	font-size: 12px;
+	color: #9CADD0;
+}
+
+.paragraphText {
+	font-size: 17px;
+}
