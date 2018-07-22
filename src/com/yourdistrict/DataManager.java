@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 public class DataManager {
 
 	private Connection gInstance;
-	private String host = "jdbc:mysql://34.203.220.176:3306/content";
+	private String host = "jdbc:mysql://localhost:3306/content";
 	private String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
 	private String userName = "saicharan";
 	private String password = "saicharan";
